@@ -1,8 +1,15 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import DisplayResult from '../Components/DisplayResult'
 
 describe('<DisplayResult />', () => {
+  it('renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<DisplayResult />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
   it('displays the calulation correct(metric)', () => {
     const component = shallow(<DisplayResult method='metric' weight='100' height='195'/>)
     const response = <div id='response'>You are Overweight with a BMI of 26.3</div>
