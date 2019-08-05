@@ -26,12 +26,22 @@ class App extends Component {
 
         <div>
           <label>Weight(kg)</label>
-          <input name="weight" value={this.state.weight} onChange={ (e) => this.setState({ weight: e.target.value})} />
+          <input name="weight-kg" value={this.state.weight} onChange={ (e) => this.setState({ weight: e.target.value})} />
         </div>
 
         <div>
           <label>Height(cm)</label>
-          <input name="height" value={this.state.height} onChange={ (e) => this.setState({ height: e.target.value })} />
+          <input name="height-cm" value={this.state.height} onChange={ (e) => this.setState({ height: e.target.value })} />
+        </div>
+
+        <div>
+          <label>Weight(kg)</label>
+          <input name="weight-lbs" value={this.state.weight} onChange={ (e) => this.setState({ weight: e.target.value})} />
+        </div>
+
+        <div>
+          <label>Height(cm)</label>
+          <input name="height-inches" value={this.state.height} onChange={ (e) => this.setState({ height: e.target.value })} />
         </div>
 
         <DisplayResult

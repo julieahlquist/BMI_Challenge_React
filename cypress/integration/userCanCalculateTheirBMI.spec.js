@@ -14,8 +14,8 @@ describe('BMI Converter', () => {
   describe('Metric method', () => {
     beforeEach(() => {
       cy.get('select[id="method"]').select('metric')
-      cy.get('input[name="weight"]').type('95')
-      cy.get('input[name="height"]').type('186')
+      cy.get('input[name="weight-kg"]').type('95')
+      cy.get('input[name="height-cm"]').type('186')
     })
 
       it('displays assesment', async () => {   
@@ -30,8 +30,8 @@ describe('BMI Converter', () => {
   describe('Imperial method', () => {
     beforeEach(() => {
       cy.get('select[id="method"]').select('imperial')
-      cy.get('input[name="weight"]').type('200')
-      cy.get('input[name="height"]').type('73')
+      cy.get('input[name="weight-lbs"]').type('200')
+      cy.get('input[name="height-inches"]').type('73')
     })
 
     it('displays assesment', async () => {   
