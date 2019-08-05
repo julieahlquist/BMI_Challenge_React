@@ -14,7 +14,7 @@ export const bmiCalculation = (weight, height, method) => {
     return '';
   } else {
     return `You are ${BMIMessage} with a BMI of ${finalBMI}`;
-  }      
+  }
 }
 
 const setBMIMessage = (finalBMI) => {
