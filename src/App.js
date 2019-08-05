@@ -35,12 +35,12 @@ class App extends Component {
         </div>
 
         <div>
-          <label>Weight(kg)</label>
+          <label>Weight(lbs)</label>
           <input name="weight-lbs" value={this.state.weight} onChange={ (e) => this.setState({ weight: e.target.value})} />
         </div>
 
         <div>
-          <label>Height(cm)</label>
+          <label>Height(inches)</label>
           <input name="height-inches" value={this.state.height} onChange={ (e) => this.setState({ height: e.target.value })} />
         </div>
 
