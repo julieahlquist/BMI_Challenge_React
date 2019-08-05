@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DisplayResult from './Components/displayResult';
+import DisplayResult from './Components/DisplayResult';
 
 class App extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class App extends Component {
         </div>
 
         <div>
-          <select id="method">
+          <select id="method" value={this.state.method} onChange={ (e) => this.setState({ method: e.target.value })}>
             <option value="metric">Metric System</option>
             <option value="imperial">Imperial System</option>
           </select>
