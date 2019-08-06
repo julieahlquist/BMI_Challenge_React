@@ -7,7 +7,7 @@ function MethodSelect(props) {
         <option value="metric">Metric System</option>
         <option value="imperial">Imperial System</option>
       </select>
-    q</div>
+    </div>
   )
 }
 
