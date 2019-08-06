@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '../App';
+import App from '../Components/App';
 import { mount, shallow } from 'enzyme';
 import { stub } from 'sinon';
+
 
 
 describe('<App />', () => {

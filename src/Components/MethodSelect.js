@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
-import { bmiCalculation } from '../Modules/BMICalculator';
+import React from 'react';
 
-class MethodSelect extends Component {
-
+function MethodSelect(props) {
+  return (
+    <div>
+      <select id="method" value={props.method} onChange={ (e) => this.setState({ method: e.target.value })}>
+        <option value="metric">Metric System</option>
+        <option value="imperial">Imperial System</option>
+      </select>
+    q</div>
+  )
 }
 
 export default MethodSelect
